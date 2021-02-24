@@ -1,0 +1,10 @@
+<!--pages/camera/index.wxml-->
+<camera device-position="back" flash="off" wx:if="{{isCameraReady}}" bind:error="cameraInitFail">
+</camera>
+<view wx:else class="camera-fail">
+  <text>相机初始化失败..</text>
+  <text class="btn-auth" bind:tap="openSetting">请授权</text>
+</view>
+<button disabled="{{!isCameraReady}}" type="primary"
+bind:tap="takePhone">拍照</button>
+<image src="{{src}}" mode="widthFix"></image>

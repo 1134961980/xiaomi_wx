@@ -1,0 +1,17 @@
+/* pages/camera/index.wxss */
+camera{
+  height: 500rpx;
+}
+.camera-fail{
+  height: 500rpx;
+  background-color: #ccc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-auth{
+  color:#0094ff;
+  text-decoration: underline;
+}
